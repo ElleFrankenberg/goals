@@ -31,7 +31,7 @@ export default function CourseGoalList({
   }
 
   return (
-    <>
+    <section>
       {warningBox}
       <ul>
         {goals.map((goal) => (
@@ -42,6 +42,6 @@ export default function CourseGoalList({
           </li>
         ))}
       </ul>
-    </>
+    </section>
   );
 }

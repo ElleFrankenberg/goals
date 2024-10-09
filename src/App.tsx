@@ -31,14 +31,15 @@ const App = () => {
   }
 
   return (
-    <main>
+    <>
       <Header image={{ src: goalsImg, alt: "A list of goals" }}>
-        <h1>Your Course Goals</h1>
+        <h1>Get your goals done</h1>
       </Header>
-      <NewGoal onAddGoal={handleAddGoal} />
-      {/* <button onClick={handleAddGoal}>Add Gole</button> */}
-      <CourseGoalList goals={goals} onDeleteGole={handleDeleteGoal} />
-    </main>
+      <main>
+        <NewGoal onAddGoal={handleAddGoal} />
+        <CourseGoalList goals={goals} onDeleteGole={handleDeleteGoal} />
+      </main>
+    </>
   );
 };
 

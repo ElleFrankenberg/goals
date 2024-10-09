@@ -2,34 +2,40 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 body {
   min-height: 100vh;
   background: linear-gradient(#f0f6f8, #e0e1e7);
+  margin: 0;
 }
 
 main {
   width: 90%;
-  max-width: 40rem;
-  margin: 3rem auto;
+  margin: 0 auto;
   padding: 2rem;
   background-color: #3a4346;
   color: #f0f6f8;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
 }
 
 header {
   display: flex;
-  flex-direction: column;
   gap: 1.5rem;
-  justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #3a4346;
 }
 
 img {
@@ -42,6 +48,10 @@ header h1 {
   margin: 0;
   font-size: 1.75rem;
   color: #f7e596;
+}
+
+form {
+  width: 18rem;
 }
 
 label {
@@ -127,12 +137,13 @@ li button:hover {
 }
 
 .infobox {
-  margin: 2rem 0;
+  margin-bottom: 1.5rem;
   padding: 0.5rem;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   font-size: 0.85rem;
   border-radius: 4px;
+  height: fit-content;
 }
 
 .infobox-hint {
